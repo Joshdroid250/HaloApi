@@ -12,6 +12,7 @@ App que consume una Api de HaloAutoCode
 ## Construido con 🛠️
 
 * [AndroidStudio](https://developer.android.com/studio?hl=es-419&gclid=CjwKCAjw0a-SBhBkEiwApljU0u7ZRPY4Mb4rQYEZwYy8l_H9tpOj8EvLcj7ZdeKU5DvZKzTPb1D1xRoCapgQAvD_BwE&gclsrc=aw.ds) - IDE
+* [Halo API](https://autocode.com/lib/halo/) - API
 
 ## Autores ✒️
 
