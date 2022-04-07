@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                     val backdrop: String = call.body()?.data?.backdropImageUrl.toString()
                     val gamer: String = call.body()?.additional?.parameters?.gamertag.toString()
                     binding.txtService.text = "Service tag: $serviceTag"
-                    binding.txGamerTag.text = "$gamer"
+                    binding.txGamertag.text = "$gamer"
                     Picasso.get().load(emblem).into(binding.imgEmblem)
                     Picasso.get().load(backdrop).into(binding.ivBackDrop)
                 }
