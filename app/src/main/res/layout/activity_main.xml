@@ -62,18 +62,19 @@
     <ImageView
         android:id="@+id/imgEmblem"
         android:layout_width="match_parent"
-        android:layout_height="190dp"
+        android:layout_height="100dp"
         android:layout_marginTop="340dp"
         android:paddingLeft="6px"
         android:paddingTop="8px"
         android:paddingRight="4px"
-        android:paddingBottom="10px" />
+        android:paddingBottom="10px"
+        />
 
     <ImageView
         android:id="@+id/ivBackDrop"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-       android:layout_marginTop="540dp"
+        android:layout_height="80dp"
+       android:layout_gravity="bottom"
         android:elevation="5dp" />
 
 </FrameLayout>
