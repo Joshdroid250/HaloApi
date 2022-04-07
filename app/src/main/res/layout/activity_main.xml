@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="16dp"
@@ -8,68 +8,79 @@
     android:orientation="vertical">
 
     <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:id="@+id/imLogo"
         android:hint="@string/hint_gamertag"
         android:layout_width="200dp"
         android:layout_height="120dp"
-        android:layout_gravity="center"
         android:src="@drawable/logo"
         ></ImageView>
 
     <TextView
         android:id="@+id/txGamertag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imLogo"
+        android:textAlignment="center"
         android:textColor="@color/text"
         android:textSize="25dp"
-        android:textStyle="bold"
-        android:textAlignment="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-></TextView>
+        android:textStyle="bold"></TextView>
+
     <EditText
+        android:id="@+id/txBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txGamertag"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignParentStart="true"
+        android:ems="10"
         android:hint="@string/hint_buscar"
+        android:inputType="text"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textColorHint="@color/text"
-        android:inputType="text"
-        android:id="@+id/txBuscar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        />
+        android:textColorHint="@color/text" />
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
+        android:layout_alignParentEnd="true"
         android:layout_height="wrap_content"
+        android:layout_below="@id/txGamertag"
         android:text="Buscar"
+        android:layout_alignParentRight="true"
         />
 
     <TextView
         android:id="@+id/txtService"
-        android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_below="@+id/txBuscar"
         android:hint="@string/service_tag"
-        android:textColorHint="@color/text"
-        android:textSize="24dp"
         android:textAlignment="center"
-        ></TextView>
+        android:textColor="@color/white"
+        android:textColorHint="@color/text"
+        android:textSize="24dp"></TextView>
 
     <ImageView
-        android:paddingLeft="6px"
-        android:paddingRight="4px"
-        android:paddingTop="8px"
-        android:paddingBottom="10px"
         android:id="@+id/imgEmblem"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-         />
+        android:layout_width="0dp"
+        android:layout_height="190dp"
+        android:layout_below="@+id/txtService"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="6px"
+        android:paddingTop="8px"
+        android:paddingRight="4px"
+        android:paddingBottom="10px" />
 
     <ImageView
-        android:elevation="5dp"
         android:id="@+id/ivBackDrop"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-         />
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/imgEmblem"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:elevation="5dp" />
 
-</LinearLayout>
+</RelativeLayout>
