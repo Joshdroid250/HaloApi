@@ -1,5 +1,7 @@
-package com.example.haloapi
+package com.example.haloapi.DataClasses
 
+import com.example.haloapi.DataClasses.Additional
+import com.example.haloapi.DataClasses.Data
 import com.google.gson.annotations.SerializedName
 
 data class ModelStatus(
