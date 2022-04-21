@@ -1,4 +1,4 @@
-package com.example.haloapi
+package com.example.haloapi.DataClass
 
 import com.google.gson.annotations.SerializedName
 
